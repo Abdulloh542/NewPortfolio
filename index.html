@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buildr® — Product Designer & Vibe Coder</title>
+  <meta name="description" content="I help founders design modern, high-performing websites that balance clarity & real outcomes.">
+  <link rel="icon" href="assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Fontshare: Satoshi -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Desktop Decorative Side Borders -->
+  <div class="v-borders"></div>
+
+    <!-- Navbar (Buildr®) -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-brand">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 11.5C7 7.5 10 4 14.5 4C19 4 20.5 7.5 20.5 11.5C20.5 15.5 17 19.5 12.5 19.5C8 19.5 5 16 5 12C5 8 8 5 12 4.5" stroke="#3EFF1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Buildr<span class="brand-reg">®</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="#projects" class="nav-link" data-i18n="nav_projects">Projects</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">About me</a>
+        <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
+      </nav>
+      <div class="nav-right-group">
+        <div class="lang-switcher" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="uz">UZ</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn-green" data-i18n="nav_contact">Get in touch</a>
+        </div>
+      </div>
+      <button class="nav-toggle-circle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Modal (Authentic Framer Card) -->
+  <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+  <div class="mobile-menu-modal" id="mobile-menu-modal">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="nav-brand">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 11.5C7 7.5 10 4 14.5 4C19 4 20.5 7.5 20.5 11.5C20.5 15.5 17 19.5 12.5 19.5C8 19.5 5 16 5 12C5 8 8 5 12 4.5" stroke="#3EFF1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Buildr<span class="brand-reg">®</span>
+      </a>
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="#projects" class="mob-link" data-i18n="nav_projects">Projects</a>
+      <a href="#about" class="mob-link" data-i18n="nav_about">About me</a>
+      <a href="#pricing" class="mob-link" data-i18n="nav_pricing">Pricing</a>
+    </nav>
+    <div class="mobile-lang-wrap">
+      <div class="lang-switcher" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="uz">UZ</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="mobile-menu-footer">
+      <a href="contact.html" class="btn-green-mob" data-i18n="nav_contact">Get in touch</a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION (Image 5 Reference) -->
+  <section class="hero-section-refined" id="top">
+    <!-- Neon green background aura (Bottom Left) -->
+    <div class="hero-glow-field"></div>
+
+    <div class="container hero-inner-container">
+      
+      <!-- Top Title Stack -->
+      <div class="hero-header-stack reveal">
+        <!-- Top badge (Mobile only) -->
+        <div class="hero-badge-available hero-badge-top">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero_badge">Available for work</span>
+        </div>
+
+        <!-- H1 layered BEHIND the cutout portrait -->
+        <h1 class="hero-h1">
+          <span class="hero-h1-top">
+            <span class="h1-hello-im">
+              <span class="h1-hello-text" data-i18n="hero_hello">Hello</span>
+              <span class="h1-im-text" data-i18n="hero_im">I’m</span>
+            </span>
+            <span class="h1-top-gap"></span>
+            <span class="h1-abdulloh" data-i18n="hero_abdulloh">Abdulloh</span>
+          </span>
+          <span class="hero-h1-bot">
+            <span class="h1-cg h1-archviz" data-i18n="hero_archviz">ArchViz</span>
+            <span class="h1-space"></span>
+            <span class="h1-artist" data-i18n="hero_artist">Artist</span>
+          </span>
+        </h1>
+      </div>
+
+      <!-- Mobile Intro & CTAs (Placed sequentially below headline and above portrait on mobile) -->
+      <div class="hero-mobile-intro">
+        <p data-i18n="hero_intro">
+          I help founders design modern, high-performing websites that balance clarity &amp; real outcomes.
+        </p>
+        <div class="hero-btn-group">
+          <a href="contact.html" class="btn-talk-pill" data-i18n="hero_talk">Let's talk</a>
+          <a href="contact.html" class="btn-arrow-pill" aria-label="Contact"><span class="arrow-glyph">↗</span></a>
+        </div>
+      </div>
+
+      <!-- Cutout Portrait Layered ON TOP of "Vibe Coder" with Slide-Up Animation -->
+      <div class="hero-portrait-stage">
+        <img src="assets/images/hero-portrait-cutout.png" alt="Buildr Designer">
+      </div>
+
+      <!-- Bottom Content Row (Left text/CTA & Right 56+ clients) -->
+      <div class="hero-bottom-grid reveal">
+        <!-- Left Column (Desktop) -->
+        <div class="hero-bottom-left">
+          <p data-i18n="hero_intro">
+            I help founders design modern, high-performing websites that balance clarity &amp; real outcomes.
+          </p>
+          <div class="hero-btn-group">
+            <a href="contact.html" class="btn-talk-pill" data-i18n="hero_talk">Let's talk</a>
+            <a href="contact.html" class="btn-arrow-pill" aria-label="Contact"><span class="arrow-glyph">↗</span></a>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="hero-bottom-right">
+          <!-- Availability badge (Desktop) -->
+          <div class="hero-badge-available hero-badge-desktop">
+            <span class="pulse-dot"></span>
+            <span data-i18n="hero_badge">Available for work</span>
+          </div>
+          <div class="hero-clients-stack">
+            <div class="avatar-group">
+              <img src="assets/images/9eNcsEcaFtnFFtJC1VTU04O4Fk.webp" alt="Client 1">
+              <img src="assets/images/pQhXoPvWjO1vcI5cQi0dKhPCytE.webp" alt="Client 2">
+              <img src="assets/images/QtM9qFpLpWySlqZcK1AR42arfs.webp" alt="Client 3">
+            </div>
+            <span class="stat-count">56+</span>
+          </div>
+          <span class="hero-clients-label" data-i18n="hero_clients_label">Happy clients</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS TICKER BAR (AUTHENTIC FRAMER LARGE STYLE) -->
+  <section class="stats-ticker-bar" aria-label="Key metrics">
+    <div class="ticker-corner-dot ticker-corner-dot-left"></div>
+    <div class="ticker-corner-dot ticker-corner-dot-right"></div>
+    <div class="stats-ticker-track">
+      <!-- Set 1 -->
+      <div class="stats-ticker-group">
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">56+</span>
+            <span class="ticker-stat-text" data-i18n="ticker_clients">Happy clients worldwide</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">96%</span>
+            <span class="ticker-stat-text" data-i18n="ticker_satisfaction">client satisfaction rate</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">7+</span>
+            <span class="ticker-stat-text" data-i18n="ticker_years">years shipping products</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">120</span>
+            <span class="ticker-stat-text" data-i18n="ticker_projects">projects delivered</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">62+</span>
+            <span class="ticker-stat-text" data-i18n="ticker_brands">brands supported</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Set 2 (Duplicate for infinite seamless loop) -->
+      <div class="stats-ticker-group" aria-hidden="true">
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">56+</span>
+            <span class="ticker-stat-text" data-i18n="ticker_clients">Happy clients worldwide</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">96%</span>
+            <span class="ticker-stat-text" data-i18n="ticker_satisfaction">client satisfaction rate</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">7+</span>
+            <span class="ticker-stat-text" data-i18n="ticker_years">years shipping products</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">120</span>
+            <span class="ticker-stat-text" data-i18n="ticker_projects">projects delivered</span>
+          </span>
+        </div>
+        <div class="stats-ticker-item">
+          <svg class="ticker-star-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M 12.731 12.731 L 10.449 19.007 C 10.34 19.3 10.059 19.496 9.746 19.496 C 9.432 19.496 9.152 19.3 9.043 19.007 L 6.765 12.731 L 0.489 10.449 C 0.195 10.34 0 10.059 0 9.746 C 0 9.432 0.195 9.152 0.489 9.043 L 6.765 6.765 L 9.047 0.489 C 9.156 0.195 9.436 0 9.75 0 C 10.063 0 10.344 0.195 10.453 0.489 L 12.735 6.765 L 19.01 9.047 C 19.304 9.156 19.499 9.436 19.499 9.75 C 19.499 10.063 19.304 10.344 19.01 10.453 Z" transform="translate(2.252 2.252)" />
+          </svg>
+          <span class="ticker-text-wrap">
+            <span class="ticker-stat-val">62+</span>
+            <span class="ticker-stat-text" data-i18n="ticker_brands">brands supported</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- EXPERIENCE SECTION (Image 4 Reference) -->
+  <section class="experience-section-v4" id="about">
+    <div class="container">
+      <div class="exp-top-row reveal">
+        <!-- Left: Badge & Label -->
+        <div class="exp-left-col">
+          <div class="pre-heading dark-theme">
+            <span class="dot"></span>
+            <span data-i18n="exp_badge">{01} My Experience</span>
+          </div>
+          
+          <!-- Circular Rotating Badge (Dubai 2018) -->
+          <div class="badge-rotate" style="margin-top: 25px;">
+            <svg class="spin-svg" viewBox="0 0 200 200">
+              <path id="textCircle" d="M 100, 100 m -72, 0 a 72,72 0 1,1 144,0 a 72,72 0 1,1 -144,0" fill="none"/>
+              <text font-size="11.5" font-family="var(--font-display)" font-weight="600" letter-spacing="3.5" fill="rgba(255,255,255,0.75)">
+                <textPath href="#textCircle" startOffset="0%">
+                  * A WEB DESIGNER * BASED IN DUBAI * SINCE 2018
+                </textPath>
+              </text>
+            </svg>
+            <div class="badge-center-rings">
+              <div class="ring-ellipse"></div>
+              <div class="ring-ellipse"></div>
+              <div class="ring-ellipse"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Statement & CTAs -->
+        <div class="exp-right-col">
+          <p class="exp-statement" data-i18n="exp_sub">
+            I design digital products that remove friction, clarify complex ideas, and scale with growing businesses. My work blends strategy, interface design, and real-world constraints to deliver results.
+          </p>
+          <div class="exp-cta-group">
+            <a href="contact.html" class="btn-dark-pill" data-i18n="nav_contact">Get in touch</a>
+            <a href="contact.html" class="btn-dark-arrow" aria-label="Contact">↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Cards Grid (Image 4 Folder Notch Cards) -->
+      <div class="exp-grid-v4 reveal">
+        <!-- Card 1 (Active) -->
+        <div class="exp-card-v4 active">
+          <div class="card-v4-header">
+            <span class="v4-period" data-i18n="exp_card_1_date">2023 - Present</span>
+            <div class="v4-sunburst">✦</div>
+          </div>
+          <h3 class="v4-title" data-i18n="exp_card_1_role">Senior UI/UX Designer</h3>
+          <div class="card-v4-footer">
+            <div class="v4-tags">
+              <span class="v4-pill">Full-time</span>
+              <span class="v4-pill">AON Studio</span>
+            </div>
+            <span class="v4-num active">01</span>
+          </div>
+          <div class="v4-active-border"></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="exp-card-v4">
+          <div class="card-v4-header">
+            <span class="v4-period">2021 — 2023</span>
+          </div>
+          <h3 class="v4-title" data-i18n="exp_card_2_role">Product Designer</h3>
+          <div class="card-v4-footer">
+            <div class="v4-tags">
+              <span class="v4-pill">Freelance</span>
+              <span class="v4-pill">Contra</span>
+            </div>
+            <span class="v4-num">02</span>
+          </div>
+          <div class="v4-subtle-border"></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="exp-card-v4">
+          <div class="card-v4-header">
+            <span class="v4-period">2018 — 2021</span>
+          </div>
+          <h3 class="v4-title" data-i18n="exp_card_3_role">Visual Designer</h3>
+          <div class="card-v4-footer">
+            <div class="v4-tags">
+              <span class="v4-pill">Part-time</span>
+              <span class="v4-pill">MedX</span>
+            </div>
+            <span class="v4-num">03</span>
+          </div>
+          <div class="v4-subtle-border"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- PROJECTS SECTION (Image 3 Reference: Pure White Background) -->
+  <section class="projects-section-white" id="projects">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+        <h2 class="projects-title-white" data-i18n="projects_title">My recent works</h2>
+      </div>
+
+      <!-- 2x2 Projects Grid -->
+      <div class="projects-grid-white">
+        <!-- Project 1 -->
+        <a href="projects/sol-productivity-app.html" class="project-card-white reveal">
+          <div class="project-img-box">
+            <img src="assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp" alt="Sol productivity app">
+            <div class="project-card-arrow">↗</div>
+            <div class="project-overlay-title">Sol productivity app</div>
+          </div>
+          <p class="project-sub-desc" data-i18n="proj_card_1_title">
+            Designing a focused task management experience for remote teams
+          </p>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="projects/finova-dashboard.html" class="project-card-white reveal">
+          <div class="project-img-box">
+            <img src="assets/images/Ir1ivZ7SgBGshY8A0pYsaCNl7M.webp" alt="Finova Dashboard">
+            <div class="project-card-arrow">↗</div>
+            <div class="project-overlay-title">Finova Dashboard</div>
+          </div>
+          <p class="project-sub-desc" data-i18n="proj_card_2_title">
+            Designing a scalable financial platform for real-time decision making
+          </p>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="projects/amin-saas-landing.html" class="project-card-white reveal">
+          <div class="project-img-box">
+            <img src="assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp" alt="Amin SaaS Landing">
+            <div class="project-card-arrow">↗</div>
+            <div class="project-overlay-title">Amin SaaS Landing</div>
+          </div>
+          <p class="project-sub-desc" data-i18n="proj_card_3_title">
+            Conversion-focused website for a growing B2B SaaS product
+          </p>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="projects/e-commerce-redesign.html" class="project-card-white reveal">
+          <div class="project-img-box">
+            <img src="assets/images/LGyqHxH7lFiWrGXLzJvoptSQyw.webp" alt="E-commerce Redesign">
+            <div class="project-card-arrow">↗</div>
+            <div class="project-overlay-title">E-commerce Redesign</div>
+          </div>
+          <p class="project-sub-desc" data-i18n="proj_card_4_title">
+            Streamlining shopping experience for a modern lifestyle brand
+          </p>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 50px;" class="reveal">
+        <div class="projects-cta-row">
+          <a href="projects.html" class="btn-green" data-i18n="proj_view_all">See all work</a>
+          <a href="projects.html" class="btn-green-arrow">↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- SERVICES SECTION (Image 2 Reference) -->
+  <section class="services-section-v2" id="services">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 60px;" class="reveal">
+        <div class="pre-heading dark-theme" style="justify-content: center;">
+          <span class="dot"></span>
+          <span data-i18n="services_badge">{04} My services</span>
+        </div>
+        <h2 class="section-title center" style="color: var(--text-white);" data-i18n="services_title">How I can help</h2>
+      </div>
+
+      <div class="service-accordion-v2 reveal">
+        <!-- Service 1 (Open) -->
+        <div class="service-row-v2 open">
+          <div class="service-top-v2">
+            <div class="service-head-left">
+              <span class="service-num-slash"><span class="slash-green">/</span>01</span>
+              <h3 class="service-title-v2" data-i18n="srv_1_name">Brand Identity</h3>
+            </div>
+            <div class="service-toggle-btn">−</div>
+          </div>
+          <div class="service-body-v2">
+            <div class="service-body-left">
+              <p class="service-desc-v2" data-i18n="srv_1_desc">
+                I design clear, flexible brand systems that define tone, visuals, and structure—helping businesses present themselves consistently across every digital touchpoint.
+              </p>
+              <div class="service-tags-v2">
+                <span class="tag-pill-v2" data-i18n="srv_1_tag1">Strategy</span>
+                <span class="tag-pill-v2" data-i18n="srv_1_tag2">Visual Identity</span>
+                <span class="tag-pill-v2" data-i18n="srv_1_tag3">Guidelines</span>
+              </div>
+            </div>
+            <div class="service-body-right">
+              <img src="assets/images/WPRsvLGxUE3Ocop9FXabgLzN3M.webp" alt="Brand Identity">
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-row-v2">
+          <div class="service-top-v2">
+            <div class="service-head-left">
+              <span class="service-num-slash"><span class="slash-green">/</span>02</span>
+              <h3 class="service-title-v2" data-i18n="srv_2_name">Product Design</h3>
+            </div>
+            <div class="service-toggle-btn">+</div>
+          </div>
+          <div class="service-body-v2">
+            <div class="service-body-left">
+              <p class="service-desc-v2" data-i18n="srv_2_desc">
+                Human-centered UX research, wireframing, high-fidelity UI systems, and interactive design for web and mobile platforms that prioritize user delight and retention.
+              </p>
+              <div class="service-tags-v2">
+                <span class="tag-pill-v2" data-i18n="srv_2_tag1">Design Systems</span>
+                <span class="tag-pill-v2" data-i18n="srv_2_tag2">Prototyping</span>
+                <span class="tag-pill-v2" data-i18n="srv_2_tag3">User Research</span>
+              </div>
+            </div>
+            <div class="service-body-right">
+              <img src="assets/images/KEMgHybskK1NEy2SvF3jZAxA8U.jpg" alt="Product Design">
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-row-v2">
+          <div class="service-top-v2">
+            <div class="service-head-left">
+              <span class="service-num-slash"><span class="slash-green">/</span>03</span>
+              <h3 class="service-title-v2" data-i18n="srv_3_name">Framer Development</h3>
+            </div>
+            <div class="service-toggle-btn">+</div>
+          </div>
+          <div class="service-body-v2">
+            <div class="service-body-left">
+              <p class="service-desc-v2" data-i18n="srv_3_desc">
+                Lighting-fast, responsive, and micro-animated websites built in Framer. Easily managed via CMS without requiring complicated engineering pipelines.
+              </p>
+              <div class="service-tags-v2">
+                <span class="tag-pill-v2" data-i18n="srv_3_tag1">CMS Setup</span>
+                <span class="tag-pill-v2" data-i18n="srv_3_tag2">Interactive Motion</span>
+                <span class="tag-pill-v2" data-i18n="srv_3_tag3">Responsive</span>
+              </div>
+            </div>
+            <div class="service-body-right">
+              <img src="assets/images/7kN3cUJHCbzqUbYWyUTOX5W6Kts.webp" alt="Framer Development">
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-row-v2">
+          <div class="service-top-v2">
+            <div class="service-head-left">
+              <span class="service-num-slash"><span class="slash-green">/</span>04</span>
+              <h3 class="service-title-v2" data-i18n="srv_4_name">Art Direction</h3>
+            </div>
+            <div class="service-toggle-btn">+</div>
+          </div>
+          <div class="service-body-v2">
+            <div class="service-body-left">
+              <p class="service-desc-v2" data-i18n="srv_4_desc">
+                Creative direction, 3D/editorial layouts, motion aesthetics, and holistic visual storytelling that elevates your brand from good to unforgettable.
+              </p>
+              <div class="service-tags-v2">
+                <span class="tag-pill-v2" data-i18n="srv_4_tag1">3D Visualization</span>
+                <span class="tag-pill-v2" data-i18n="srv_4_tag2">Creative Concept</span>
+                <span class="tag-pill-v2" data-i18n="srv_4_tag3">ArchViz</span>
+              </div>
+            </div>
+            <div class="service-body-right">
+              <img src="assets/images/aeabwTdbTfzHpmt7xEFnCIHAb0.webp" alt="Art Direction">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- REVIEWS / TESTIMONIALS SECTION (Image 3 Reference) -->
+  <section class="reviews-section" style="background: var(--black); padding: 110px 0 140px; overflow: hidden;">
+    <div class="container" style="text-align: center; margin-bottom: 60px;">
+      <div class="pre-heading dark-theme" style="justify-content: center;">
+        <span class="dot"></span>
+        <span data-i18n="testimonials_badge">{05} Testimonials</span>
+      </div>
+      <h2 class="section-title center" style="color: var(--text-white);" data-i18n="testimonials_title">Trusted by happy clients</h2>
+      <p class="section-subtitle center" style="color: var(--text-muted);" data-i18n="testimonials_sub">
+        Real feedback from founders, teams, and collaborators worldwide.
+      </p>
+    </div>
+
+    <!-- Continuous Infinite Reviews Ticker -->
+    <div class="reviews-ticker">
+      <div class="ticker-track">
+        <!-- Review 1: Bennett S. -->
+        <div class="review-card-v2">
+          <div class="review-header-v2">
+            <div class="review-author-v2">
+              <img src="assets/images/pQhXoPvWjO1vcI5cQi0dKhPCytE.webp" alt="Bennett S.">
+              <div class="review-author-meta">
+                Bennett S., Designer
+              </div>
+            </div>
+            <div class="review-quote-mark">❝</div>
+          </div>
+          <p class="review-quote-text">
+            The level of polish and attention to detail was impressive. Every screen felt intentional, consistent, and thoughtfully designed across devices.
+          </p>
+          <div class="review-stars-v2">★★★★★</div>
+        </div>
+
+        <!-- Review 2: Roger M. -->
+        <div class="review-card-v2">
+          <div class="review-header-v2">
+            <div class="review-author-v2">
+              <img src="assets/images/testimonial-roger.png" alt="Roger M.">
+              <div class="review-author-meta">
+                Roger M., Lead ABC Studios
+              </div>
+            </div>
+            <div class="review-quote-mark">❝</div>
+          </div>
+          <p class="review-quote-text">
+            The process was structured and efficient. Ideas were translated into clean interfaces quickly, with great suggestions that improved the original scope.
+          </p>
+          <div class="review-stars-v2">★★★★★</div>
+        </div>
+
+        <!-- Review 3: AvaMax -->
+        <div class="review-card-v2">
+          <div class="review-header-v2">
+            <div class="review-author-v2">
+              <img src="assets/images/9eNcsEcaFtnFFtJC1VTU04O4Fk.webp" alt="AvaMax">
+              <div class="review-author-meta">
+                AvaMax, Founder
+              </div>
+            </div>
+            <div class="review-quote-mark">❝</div>
+          </div>
+          <p class="review-quote-text">
+            Working together felt effortless. Clear communication, strong design instincts, and a final result that exceeded expectations without unnecessary back and forth.
+          </p>
+          <div class="review-stars-v2">★★★★★</div>
+        </div>
+
+        <!-- Review 4: David Chen -->
+        <div class="review-card-v2">
+          <div class="review-header-v2">
+            <div class="review-author-v2">
+              <img src="assets/images/QtM9qFpLpWySlqZcK1AR42arfs.webp" alt="David Chen">
+              <div class="review-author-meta">
+                David Chen, CTO Finova
+              </div>
+            </div>
+            <div class="review-quote-mark">❝</div>
+          </div>
+          <p class="review-quote-text">
+            Incredible eye for detail, fast turnarounds, and designs that our developers could implement without back-and-forth headaches.
+          </p>
+          <div class="review-stars-v2">★★★★★</div>
+        </div>
+
+        <!-- Review 1 Duplicated for seamless loop -->
+        <div class="review-card-v2">
+          <div class="review-header-v2">
+            <div class="review-author-v2">
+              <img src="assets/images/pQhXoPvWjO1vcI5cQi0dKhPCytE.webp" alt="Bennett S.">
+              <div class="review-author-meta">
+                Bennett S., Designer
+              </div>
+            </div>
+            <div class="review-quote-mark">❝</div>
+          </div>
+          <p class="review-quote-text">
+            The level of polish and attention to detail was impressive. Every screen felt intentional, consistent, and thoughtfully designed across devices.
+          </p>
+          <div class="review-stars-v2">★★★★★</div>
+        </div>
+
+        <!-- Review 2 Duplicated for seamless loop -->
+        <div class="review-card-v2">
+          <div class="review-header-v2">
+            <div class="review-author-v2">
+              <img src="assets/images/testimonial-roger.png" alt="Roger M.">
+              <div class="review-author-meta">
+                Roger M., Lead ABC Studios
+              </div>
+            </div>
+            <div class="review-quote-mark">❝</div>
+          </div>
+          <p class="review-quote-text">
+            The process was structured and efficient. Ideas were translated into clean interfaces quickly, with great suggestions that improved the original scope.
+          </p>
+          <div class="review-stars-v2">★★★★★</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- WHY CHOOSE ME SECTION (Image 2 Reference) -->
+  <section class="why-me-section" style="background: var(--black); padding: 120px 0;">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 60px;" class="reveal">
+        <div class="pre-heading dark-theme" style="justify-content: center;">
+          <span class="dot"></span>
+          <span data-i18n="why_me_badge">{06} Why I'm the best</span>
+        </div>
+        <h2 class="section-title center" style="color: var(--text-white);" data-i18n="why_me_title">Why choose me</h2>
+        <p class="section-subtitle center" style="color: var(--text-muted);" data-i18n="why_me_desc">
+          A practical, reliable approach focused on quality, clarity, and long-term results.
+        </p>
+      </div>
+
+      <div class="bento-section-v2 reveal">
+        <!-- Bento Left: Image Card with Woman Monochrome Portrait -->
+        <div class="bento-portrait-card-v2">
+          <img src="assets/images/why-me-portrait.png" alt="Why choose me portrait">
+        </div>
+
+        <!-- Bento Right: 2x2 Grid -->
+        <div class="bento-grid-v2">
+          <!-- Card 1: 10+ -->
+          <div class="why-card-v2">
+            <svg class="why-geom-bg" width="90" height="90" viewBox="0 0 100 100" fill="none">
+              <polygon points="100,0 100,100 0,100" fill="white" fill-opacity="0.15"/>
+              <polygon points="100,30 100,100 30,100" fill="white" fill-opacity="0.25"/>
+            </svg>
+            <div class="stat-num">10+</div>
+            <div class="stat-txt">Years of hands-on design experience</div>
+          </div>
+
+          <!-- Card 2: 95% -->
+          <div class="why-card-v2">
+            <svg class="why-geom-bg" width="90" height="90" viewBox="0 0 100 100" fill="none">
+              <circle cx="100" cy="0" r="80" stroke="white" stroke-width="6" stroke-opacity="0.2"/>
+              <circle cx="100" cy="0" r="50" stroke="white" stroke-width="4" stroke-opacity="0.15"/>
+            </svg>
+            <div class="stat-num">95%</div>
+            <div class="stat-txt">Average client feedback rate</div>
+          </div>
+
+          <!-- Card 3: 75+ -->
+          <div class="why-card-v2">
+            <svg class="why-geom-bg" width="90" height="90" viewBox="0 0 100 100" fill="none">
+              <path d="M50 10 L90 35 L90 80 L50 100 L10 80 L10 35 Z" stroke="white" stroke-width="3" stroke-opacity="0.25" fill="none"/>
+            </svg>
+            <div class="stat-num">75+</div>
+            <div class="stat-txt">Projects delivered from concept to launch</div>
+          </div>
+
+          <!-- Card 4: Neon Green 56+ Card -->
+          <div class="why-card-v2 green-card">
+            <div>
+              <div class="stat-num">56+</div>
+              <div class="stat-heading">Trusted clients</div>
+              <div class="stat-desc">Founders and teams trust me to deliver</div>
+            </div>
+            <div class="bento-green-notch">
+              <div class="notch-avatars">
+                <img src="assets/images/9eNcsEcaFtnFFtJC1VTU04O4Fk.webp" alt="Client 1">
+                <img src="assets/images/pQhXoPvWjO1vcI5cQi0dKhPCytE.webp" alt="Client 2">
+                <img src="assets/images/QtM9qFpLpWySlqZcK1AR42arfs.webp" alt="Client 3">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING SECTION -->
+  <section class="pricing-section" id="pricing" style="background: var(--black); padding: 140px 0; border-top: 1px solid var(--dark-border);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 70px;" class="reveal">
+        <div class="pre-heading dark-theme" style="justify-content: center;">
+          <span class="dot"></span>
+          <span data-i18n="pricing_badge">{07} Pricing</span>
+        </div>
+        <h2 class="section-title center" style="color: var(--text-white); font-size: clamp(38px, 4.2vw, 56px); margin-bottom: 14px;" data-i18n="pricing_title">Simple pricing</h2>
+        <p class="section-subtitle center" style="color: var(--text-muted); max-width: 440px; margin: 0 auto; line-height: 1.5; font-size: 16px;" data-i18n="pricing_sub">
+          Clear packages designed to fit different<br>project sizes and goals.
+        </p>
+      </div>
+
+      <div class="pricing-grid-v3 reveal">
+        <!-- Card 1: Basic -->
+        <div class="pricing-card-basic">
+          <div>
+            <h3 class="pricing-tier-title" data-i18n="pricing_basic_title">Basic</h3>
+            <div class="pricing-tier-sub" data-i18n="pricing_basic_sub">For small projects</div>
+            <div class="pricing-price-row">
+              <span class="pricing-price-amount">$2500</span>
+              <span class="pricing-price-cycle" data-i18n="pricing_period">/month</span>
+            </div>
+            <div class="pricing-divider"></div>
+            <div class="pricing-includes-label" data-i18n="pricing_included">What's Included:</div>
+            <ul class="pricing-features-list">
+              <li class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                  <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span data-i18n="pricing_b_item_1">UX &amp; UI audit of existing screens</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                  <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span data-i18n="pricing_b_item_2">Layout, hierarchy, and spacing fixes</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                  <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span data-i18n="pricing_b_item_3">Visual style alignment (color, type)</span>
+              </li>
+              <li class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                  <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                  <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span data-i18n="pricing_b_item_4">Clear design improvement notes</span>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing-btn-group">
+            <a href="contact.html" class="pricing-btn-pill" data-i18n="pricing_get_started">Get started</a>
+            <a href="contact.html" class="pricing-btn-arrow" aria-label="Get started">↗</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Premium (Featured with radiant green aura) -->
+        <div class="pricing-card-premium">
+          <div class="premium-inner-grid">
+            <!-- Left Sub-column -->
+            <div>
+              <h3 class="pricing-tier-title" data-i18n="pricing_prem_title">Premium</h3>
+              <div class="pricing-tier-sub" data-i18n="pricing_prem_sub">For full products</div>
+              <div class="pricing-price-row">
+                <span class="pricing-price-amount">$3500</span>
+                <span class="pricing-price-cycle" data-i18n="pricing_period">/month</span>
+              </div>
+            </div>
+
+            <!-- Right Sub-column -->
+            <div>
+              <div class="pricing-includes-label" data-i18n="pricing_included">What's Included:</div>
+              <ul class="pricing-features-list">
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                    <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span data-i18n="pricing_p_item_1">UX flows and interface design</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                    <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span data-i18n="pricing_p_item_2">Reusable components and design system</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                    <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span data-i18n="pricing_p_item_3">Responsive layouts (desktop, tablet, mobile)</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                    <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span data-i18n="pricing_p_item_4">Webflow-ready structure or dev handoff files</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                    <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span data-i18n="pricing_p_item_5">High-fidelity UI screens</span>
+                </li>
+                <li class="pricing-feature-item">
+                  <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="9.5" fill="#ffffff"/>
+                    <path d="M6 10.2L8.6 12.8L14 7.4" stroke="#0d0d0d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <span data-i18n="pricing_p_item_6">Iteration rounds and refinements</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing-btn-group">
+            <a href="contact.html" class="pricing-btn-pill" data-i18n="pricing_get_started">Get started</a>
+            <a href="contact.html" class="pricing-btn-arrow" aria-label="Get started">↗</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- FAQ SECTION (Image 1 Light Theme Reference) -->
+  <section class="faq-section-light" id="faq">
+    <div class="container faq-grid-v2">
+      <!-- Left Column -->
+      <div class="reveal">
+        <div class="pre-heading light-theme">
+          <span class="dot"></span>
+          <span data-i18n="faq_badge">{08} FAQ</span>
+        </div>
+        <h2 class="faq-title-v2" data-i18n="faq_title">Got any<br>Questions?</h2>
+      </div>
+
+      <!-- Right Column: White Accordion Cards -->
+      <div class="faq-cards-wrap reveal">
+        <!-- Question 1 -->
+        <div class="faq-card-v2">
+          <div class="faq-card-top">
+            <span class="faq-card-q" data-i18n="faq_q1">What is your typical project timeline?</span>
+            <div class="faq-card-btn">
+              <svg viewBox="0 0 256 256" width="20" height="20" fill="currentColor">
+                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-card-ans" data-i18n="faq_a1">
+            Most design projects take between 2–4 weeks, depending on scope, feedback speed, and complexity. Smaller tasks can move faster.
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="faq-card-v2">
+          <div class="faq-card-top">
+            <span class="faq-card-q" data-i18n="faq_q2">Do you offer ongoing design support?</span>
+            <div class="faq-card-btn">
+              <svg viewBox="0 0 256 256" width="20" height="20" fill="currentColor">
+                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-card-ans" data-i18n="faq_a2">
+            Yes! I offer dedicated monthly retainers and ongoing design advisory for founders and growing product teams needing steady feature iteration.
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="faq-card-v2">
+          <div class="faq-card-top">
+            <span class="faq-card-q" data-i18n="faq_q3">What do you need from me before starting?</span>
+            <div class="faq-card-btn">
+              <svg viewBox="0 0 256 256" width="20" height="20" fill="currentColor">
+                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-card-ans" data-i18n="faq_a3">
+            A clear brief outlining your goals, target audience, any existing branding guidelines or assets, and visual references or competitors you admire.
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="faq-card-v2">
+          <div class="faq-card-top">
+            <span class="faq-card-q" data-i18n="faq_q4">How involved do I need to be during the project?</span>
+            <div class="faq-card-btn">
+              <svg viewBox="0 0 256 256" width="20" height="20" fill="currentColor">
+                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-card-ans" data-i18n="faq_a4">
+            I respect your time. We'll have weekly async check-ins or quick Figma syncs to keep decisions moving quickly with minimal friction.
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="faq-card-v2">
+          <div class="faq-card-top">
+            <span class="faq-card-q" data-i18n="faq_q5">How do revisions and feedback work?</span>
+            <div class="faq-card-btn">
+              <svg viewBox="0 0 256 256" width="20" height="20" fill="currentColor">
+                <path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="faq-card-ans" data-i18n="faq_a5">
+            All milestones include dedicated feedback loops. Revisions are tracked directly in Figma comments to ensure full transparency and rapid turnarounds.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG SECTION (Image 1 & Reference: Pure White Theme) -->
+  <section class="blog-section" id="blog" style="background: #ffffff; padding: 125px 0 90px; color: var(--text-dark);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 60px;" class="reveal">
+        <div class="pre-heading light-theme" style="justify-content: center;">
+          <span class="dot"></span>
+          <span data-i18n="blog_badge">{09} Recent posts</span>
+        </div>
+        <h2 class="section-title center" data-i18n="blog_title" style="color: #111111; font-size: clamp(38px, 4.5vw, 56px); margin-top: 14px; letter-spacing: -0.03em;">Latest thoughts</h2>
+      </div>
+
+      <div class="blog-grid-v2 reveal">
+        <!-- Blog 1 -->
+        <a href="blog/designing-products-that-scale-with-growth.html" class="blog-card-v2">
+          <div class="blog-thumb-v2">
+            <img src="assets/images/zm8feKGJHupDKbbm2uB8DTSsKI.webp" alt="Designing products that scale with growth" loading="lazy">
+            <div class="blog-notch-v2">
+              <span class="blog-badge-v2" data-i18n="blog_p1_cat">Product Design</span>
+              <svg class="notch-curve-top" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M14 14V0C14 7.732 7.732 14 0 14H14Z" fill="#ffffff"/>
+              </svg>
+              <svg class="notch-curve-left" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M14 14H0C7.732 14 14 7.732 14 0V14Z" fill="#ffffff"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-meta-v2">Jun 9, 2025</div>
+          <h3 class="blog-title-v2" data-i18n="blog_p1_title">Designing products that scale with growth</h3>
+        </a>
+
+        <!-- Blog 2 -->
+        <a href="blog/how-design-systems-save-development-time.html" class="blog-card-v2">
+          <div class="blog-thumb-v2">
+            <img src="assets/images/LGyqHxH7lFiWrGXLzJvoptSQyw.webp" alt="How design systems save development time" loading="lazy">
+            <div class="blog-notch-v2">
+              <span class="blog-badge-v2" data-i18n="blog_p2_cat">Design System</span>
+              <svg class="notch-curve-top" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M14 14V0C14 7.732 7.732 14 0 14H14Z" fill="#ffffff"/>
+              </svg>
+              <svg class="notch-curve-left" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M14 14H0C7.732 14 14 7.732 14 0V14Z" fill="#ffffff"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-meta-v2">Jun 19, 2025</div>
+          <h3 class="blog-title-v2" data-i18n="blog_p2_title">How design systems save development time</h3>
+        </a>
+
+        <!-- Blog 3 -->
+        <a href="blog/why-clean-intuitive-ui-improves-user-decisions.html" class="blog-card-v2">
+          <div class="blog-thumb-v2">
+            <img src="assets/images/JHy8J2xVWsDA5NRoRUS3FIgWXq0.webp" alt="Why clean & intuitive UI improves user decisions" loading="lazy">
+            <div class="blog-notch-v2">
+              <span class="blog-badge-v2" data-i18n="blog_p3_cat">UI/UX Design</span>
+              <svg class="notch-curve-top" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M14 14V0C14 7.732 7.732 14 0 14H14Z" fill="#ffffff"/>
+              </svg>
+              <svg class="notch-curve-left" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M14 14H0C7.732 14 14 7.732 14 0V14Z" fill="#ffffff"/>
+              </svg>
+            </div>
+          </div>
+          <div class="blog-meta-v2">Nov 30, 2025</div>
+          <h3 class="blog-title-v2" data-i18n="blog_p3_title">Why clean & intuitive UI improves user decisions</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION (Image 1 Reference) -->
+  <footer class="footer-section-v1">
+    <div class="footer-glow-field"></div>
+    <div class="container">
+      <div class="footer-grid-v1">
+        <!-- Left Column: Title, Menu, Follow Us -->
+        <div class="footer-left-v1 reveal">
+          <h2 class="footer-title-v1" data-i18n-html="footer_title">Let's create<br>magic together</h2>
+          
+          <div class="footer-links-row-v1">
+            <!-- Menu Column -->
+            <div class="footer-menu-col">
+              <span class="footer-col-title" data-i18n="footer_menu">Menu</span>
+              <div class="footer-nav-list">
+                <a href="index.html" data-i18n="footer_home">Home</a>
+                <a href="#projects" data-i18n="nav_projects">Projects</a>
+                <a href="contact.html" data-i18n="nav_contact">Contact</a>
+                <a href="blog.html" data-i18n="blog_badge">Blog</a>
+              </div>
+            </div>
+
+            <!-- Follow Us Column -->
+            <div class="footer-follow-col">
+              <span class="footer-col-title" data-i18n="footer_follow">Follow us</span>
+              <p class="footer-follow-desc" data-i18n="footer_follow_desc">
+                Design work, experiments, and product updates.
+              </p>
+              <div class="footer-social-icons">
+                <!-- Instagram -->
+                <a href="https://instagram.com/abdullohadinaev" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </a>
+                <!-- Telegram -->
+                <a href="https://t.me/me_abdulloh_me" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Telegram">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </a>
+                <!-- Gmail -->
+                <a href="mailto:abdullohadinaev2@gmil.com" class="social-icon-btn" aria-label="Gmail">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: "Let's work together" Form Card -->
+        <div class="footer-right-v1 reveal">
+          <div class="footer-form-card">
+            <h3 class="footer-form-title" data-i18n="footer_form_title">Let's work together</h3>
+            <form id="footer-contact-form">
+              <div class="form-group-v1">
+                <input type="text" data-i18n-placeholder="footer_name_ph" placeholder="Your name" required>
+              </div>
+              <div class="form-group-v1">
+                <input type="email" data-i18n-placeholder="footer_email_ph" placeholder="Your email" required>
+              </div>
+              <div class="form-group-v1">
+                <textarea data-i18n-placeholder="footer_msg_ph" placeholder="How can we help?" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn-green-submit" data-i18n="footer_submit">Get in touch</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="footer-bottom-bar-v1">
+        <div class="footer-brand-bottom">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 11.5C7 7.5 10 4 14.5 4C19 4 20.5 7.5 20.5 11.5C20.5 15.5 17 19.5 12.5 19.5C8 19.5 5 16 5 12C5 8 8 5 12 4.5" stroke="#3EFF1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>Buildr®</span>
+        </div>
+        <div class="footer-copy-center" data-i18n="footer_rights">
+          © 2026 — All rights reserved
+        </div>
+        <div class="footer-credit-right" data-i18n="footer_created">
+          Created by Flux
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

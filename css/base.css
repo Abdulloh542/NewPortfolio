@@ -1,0 +1,128 @@
+/* ==========================================================================
+   BASE & RESET STYLES
+   ========================================================================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--text-white);
+  font-family: var(--font-body);
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-size: 15px;
+  background-color: var(--black);
+  position: relative;
+}
+
+::selection {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-fast);
+}
+
+img, svg, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Containers */
+.container {
+  width: 100%;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+  position: relative;
+}
+
+/* Framer Desktop Side Border Overlay */
+.v-borders {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-w);
+  height: 100%;
+  pointer-events: none;
+  z-index: 99;
+}
+
+.v-borders::before,
+.v-borders::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--border-overlay);
+}
+
+.v-borders::before {
+  left: 0;
+}
+
+.v-borders::after {
+  right: 0;
+}
+
+/* Section Dividers */
+.section-divider {
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark-border);
+  position: relative;
+  z-index: 5;
+}
+
+.section-divider.light {
+  background-color: var(--light-border);
+}

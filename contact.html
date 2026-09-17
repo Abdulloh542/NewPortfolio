@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Let’s Work Together · Akir</title>
+  <meta name="description" content="Get in touch with Akir for digital product design, web applications, brand systems, and Framer development.">
+  <link rel="icon" href="assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Fontshare: Satoshi -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Desktop Decorative Side Borders -->
+  <div class="v-borders"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-brand">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 11.5C7 7.5 10 4 14.5 4C19 4 20.5 7.5 20.5 11.5C20.5 15.5 17 19.5 12.5 19.5C8 19.5 5 16 5 12C5 8 8 5 12 4.5" stroke="#3EFF1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Buildr<span class="brand-reg">®</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="projects.html" class="nav-link " data-i18n="nav_projects">Projects</a>
+        <a href="index.html#about" class="nav-link" data-i18n="nav_about">About me</a>
+        <a href="index.html#pricing" class="nav-link" data-i18n="nav_pricing">Pricing</a>
+        <a href="blog.html" class="nav-link " data-i18n="blog_badge">Blog</a>
+      </nav>
+      <div class="nav-right-group">
+        <div class="lang-switcher" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="uz">UZ</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <div class="nav-cta">
+          <a href="contact.html" class="btn-green" data-i18n="nav_contact">Get in touch</a>
+        </div>
+      </div>
+      <button class="nav-toggle-circle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span class="toggle-bar"></span>
+        <span class="toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Modal (Authentic Framer Card) -->
+  <div class="mobile-menu-backdrop" id="mobile-menu-backdrop"></div>
+  <div class="mobile-menu-modal" id="mobile-menu-modal">
+    <div class="mobile-menu-header">
+      <a href="index.html" class="nav-brand">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 11.5C7 7.5 10 4 14.5 4C19 4 20.5 7.5 20.5 11.5C20.5 15.5 17 19.5 12.5 19.5C8 19.5 5 16 5 12C5 8 8 5 12 4.5" stroke="#3EFF1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Buildr<span class="brand-reg">®</span>
+      </a>
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close navigation">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-links">
+      <a href="projects.html" class="mob-link" data-i18n="nav_projects">Projects</a>
+      <a href="index.html#about" class="mob-link" data-i18n="nav_about">About me</a>
+      <a href="index.html#pricing" class="mob-link" data-i18n="nav_pricing">Pricing</a>
+      <a href="blog.html" class="mob-link" data-i18n="blog_badge">Blog</a>
+    </nav>
+    <div class="mobile-lang-wrap">
+      <div class="lang-switcher" aria-label="Language selector">
+        <button class="lang-btn active" data-lang="uz">UZ</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+    <div class="mobile-menu-footer">
+      <a href="contact.html" class="btn-green-mob" data-i18n="nav_contact">Get in touch</a>
+    </div>
+  </div>
+
+  <main style="padding-top: 180px; padding-bottom: 140px; background: var(--black);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 70px;" class="reveal">
+        <div class="pre-heading dark-theme" style="justify-content: center;">
+          <span class="dot"></span>
+          <span>Contact me</span>
+        </div>
+        <h1 class="section-title center" style="color: var(--text-white); font-size: clamp(44px, 6vw, 82px); line-height: 1;">
+          Let's get<br>in touch
+        </h1>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 40px; align-items: stretch;" class="contact-grid reveal">
+        
+        <!-- Left Column: Neon Green Contact Card -->
+        <div style="background: var(--green); border-radius: var(--radius-lg); padding: 48px 40px; display: flex; flex-direction: column; justify-content: space-between; color: var(--black); position: relative; overflow: hidden; min-height: 480px;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; background: rgba(0,0,0,0.1); padding: 6px 14px; border-radius: var(--radius-pill); margin-bottom: 30px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--black);"></span>
+              Available for Q3 &amp; Q4
+            </div>
+
+            <h2 style="font-family: var(--font-display); font-size: clamp(28px, 3.5vw, 42px); font-weight: 800; line-height: 1.15; margin-bottom: 18px; letter-spacing: -0.03em;">
+              Have an idea in mind?<br>Let's make it reality.
+            </h2>
+            <p style="font-size: 16px; line-height: 1.5; color: rgba(0,0,0,0.75); font-weight: 500; max-width: 380px;">
+              From high-conversion websites to complete design systems, I help ambitious brands ship exceptional work.
+            </p>
+          </div>
+
+          <div style="margin-top: 40px;">
+            <div style="font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(0,0,0,0.6); margin-bottom: 6px;">Direct Email</div>
+            <a href="mailto:hello@akir.design" style="font-family: var(--font-display); font-size: 22px; font-weight: 800; color: var(--black); text-decoration: underline;">
+              hello@akir.design
+            </a>
+
+            <!-- Social Links -->
+            <div style="display: flex; gap: 12px; margin-top: 30px;">
+              <a href="https://x.com" target="_blank" rel="noopener" style="width: 42px; height: 42px; border-radius: 50%; background: var(--black); color: var(--green); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold;">𝕏</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener" style="width: 42px; height: 42px; border-radius: 50%; background: var(--black); color: var(--green); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold;">IG</a>
+              <a href="https://dribbble.com" target="_blank" rel="noopener" style="width: 42px; height: 42px; border-radius: 50%; background: var(--black); color: var(--green); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold;">Dr</a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener" style="width: 42px; height: 42px; border-radius: 50%; background: var(--black); color: var(--green); display: flex; align-items: center; justify-content: center; font-size: 15px; font-weight: bold;">In</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Form -->
+        <div style="background: var(--dark-card); border: 1px solid var(--dark-border); border-radius: var(--radius-lg); padding: 48px 40px;">
+          <form id="contact-form" style="display: flex; flex-direction: column; gap: 24px;">
+            <div class="form-group">
+              <label style="display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 8px;">Your Name *</label>
+              <input type="text" placeholder="John Doe" required style="padding: 14px 18px; border-radius: var(--radius-md);">
+            </div>
+
+            <div class="form-group">
+              <label style="display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 8px;">Your Email *</label>
+              <input type="email" placeholder="john@example.com" required style="padding: 14px 18px; border-radius: var(--radius-md);">
+            </div>
+
+            <div class="form-group">
+              <label style="display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 8px;">What services are you looking for?</label>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                <label style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1px solid var(--dark-border); border-radius: var(--radius-pill); font-size: 13px; cursor: pointer;">
+                  <input type="checkbox" name="service" value="UI/UX" style="accent-color: var(--green);"> UI/UX Design
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1px solid var(--dark-border); border-radius: var(--radius-pill); font-size: 13px; cursor: pointer;">
+                  <input type="checkbox" name="service" value="Framer" style="accent-color: var(--green);"> Framer Development
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1px solid var(--dark-border); border-radius: var(--radius-pill); font-size: 13px; cursor: pointer;">
+                  <input type="checkbox" name="service" value="Brand" style="accent-color: var(--green);"> Brand Identity
+                </label>
+                <label style="display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; border: 1px solid var(--dark-border); border-radius: var(--radius-pill); font-size: 13px; cursor: pointer;">
+                  <input type="checkbox" name="service" value="System" style="accent-color: var(--green);"> Design System
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label style="display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 8px;">Project Details *</label>
+              <textarea placeholder="Tell me about your goals, timeline, and budget..." rows="4" required style="padding: 14px 18px; border-radius: var(--radius-md);"></textarea>
+            </div>
+
+            <button type="submit" class="btn-green" style="padding: 16px 32px; font-size: 15px; width: 100%;">
+              Send Project Inquiry ↗
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-left reveal">
+          <h2>Let's create<br>magic together</h2>
+          <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 24px; max-width: 380px;">
+            Have an upcoming project or idea? Let’s design something that truly moves the needle for your business.
+          </p>
+          <div style="display: flex; gap: 14px;">
+            <a href="contact.html" class="btn-green">Get in touch</a>
+            <a href="projects.html" class="btn-outline">
+              <span>View works</span>
+              <span class="circle-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-right reveal">
+          <form class="footer-form" id="contact-form">
+            <h3 style="font-family: var(--font-display); font-size: 18px; color: var(--text-white); margin-bottom: 4px;">Quick Message</h3>
+            <div class="form-group">
+              <input type="text" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your email address" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Tell me about your project..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-green" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Buildr® — All rights reserved. Designed with precision.
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

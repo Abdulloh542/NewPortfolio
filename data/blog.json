@@ -1,0 +1,106 @@
+[
+  {
+    "id": "how-design-systems-save-development-time",
+    "slug": "how-design-systems-save-development-time",
+    "title": "How design systems save development time",
+    "category": "Design System",
+    "date": "14 May 2025",
+    "readTime": "4 min read",
+    "thumbnail": "assets/images/JHy8J2xVWsDA5NRoRUS3FIgWXq0.webp",
+    "excerpt": "Design systems are often seen as a design deliverable, but their biggest impact is felt during development and long-term maintenance.",
+    "sections": [
+      {
+        "title": "The Hidden Cost of No System",
+        "content": "Without shared systems, teams rebuild the same components repeatedly. This slows development, introduces bugs, and creates inconsistent user experiences across the product. When every button, modal, and input is created on the fly, engineers waste valuable hours guessing spacing and edge-case behaviors."
+      },
+      {
+        "title": "What Makes a System Effective",
+        "content": "A useful design system is not an exhaustive encyclopedia of every possible component. It includes clear component rules, defined spacing and typography scales, reliable states and variants, and concrete usage guidelines. Documentation matters just as much as visuals."
+      },
+      {
+        "title": "Systems Improve Collaboration",
+        "content": "Design systems create a common shared language between design, engineering, and product. Designers design faster, developers build with confidence, and product managers can accurately scope engineering sprints from day one."
+      },
+      {
+        "title": "Start Small, Scale Intentionally",
+        "content": "You don't need a massive monolithic system on day one. Start with foundational primitives: buttons, inputs, layout grids, and typographic hierarchy. Grow organically as your product complexity expands."
+      }
+    ],
+    "quote": "Design systems don't slow teams down \u2014 they remove friction. Consistency is speed."
+  },
+  {
+    "id": "why-clean-intuitive-ui-improves-user-decisions",
+    "slug": "why-clean-intuitive-ui-improves-user-decisions",
+    "title": "Why clean & intuitive UI improves user decisions",
+    "category": "UI/UX Design",
+    "date": "28 Apr 2025",
+    "readTime": "5 min read",
+    "thumbnail": "assets/images/zm8feKGJHupDKbbm2uB8DTSsKI.webp",
+    "excerpt": "Every extra element on a screen adds cognitive weight. Good interface design isn't about decoration \u2014 it's about clarity of intent.",
+    "sections": [
+      {
+        "title": "Cognitive Load and Decision Fatigue",
+        "content": "When users land on an interface packed with competing visual weights, flashy animations, and dense blocks of text, their decision-making slows to a crawl. Clear visual hierarchy directly removes hesitation and guides users toward their primary objective effortlessly."
+      },
+      {
+        "title": "The Power of Intentional Spacing",
+        "content": "Negative space is an active functional element, not empty canvas. Strategic white space groups related items, creates resting points for the eye, and elevates the perceived value and sophistication of the entire product."
+      },
+      {
+        "title": "Reducing Choice Architecture",
+        "content": "Hick's Law proves that the time it takes to make a decision increases logarithmically with the number and complexity of choices. By pruning secondary actions and emphasizing primary CTAs with distinct contrast, conversion rates dramatically improve."
+      }
+    ],
+    "quote": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+  },
+  {
+    "id": "designing-better-webflow-projects-from-scratch",
+    "slug": "designing-better-webflow-projects-from-scratch",
+    "title": "Designing better Framer projects from scratch",
+    "category": "Framer & Tools",
+    "date": "10 Apr 2025",
+    "readTime": "6 min read",
+    "thumbnail": "assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp",
+    "excerpt": "Building production-grade Framer and no-code websites requires understanding responsive foundations, component architecture, and clean asset pipelines.",
+    "sections": [
+      {
+        "title": "Responsive Foundations Before Styling",
+        "content": "Before adding micro-animations or custom typography, establish bulletproof breakpoint logic. Using dynamic CSS flex and grid stacks ensures your designs degrade gracefully from massive 4K ultrawides down to compact 375px mobile screens without breaking."
+      },
+      {
+        "title": "Componentize Early and Often",
+        "content": "Treat buttons, cards, badges, and headers as atomic components from the first hour. Establishing variants for hover, active, disabled, and mobile states early prevents hundreds of repetitive manual overrides later in the build cycle."
+      },
+      {
+        "title": "Optimizing Performance and Media",
+        "content": "A beautiful site that takes 6 seconds to load is a failed site. Serve modern WebP formats, declare explicit dimensions to eliminate cumulative layout shifts (CLS), and implement lazy loading on below-the-fold media."
+      }
+    ],
+    "quote": "Great digital craftsmanship is invisible. The user simply experiences instant responsiveness and effortless navigation."
+  },
+  {
+    "id": "designing-products-that-scale-with-growth",
+    "slug": "designing-products-that-scale-with-growth",
+    "title": "Designing products that scale with growth",
+    "category": "Product Design",
+    "date": "22 Mar 2025",
+    "readTime": "4 min read",
+    "thumbnail": "assets/images/LGyqHxH7lFiWrGXLzJvoptSQyw.webp",
+    "excerpt": "How to build interfaces and design foundations that withstand rapid user scaling, new feature additions, and international localization.",
+    "sections": [
+      {
+        "title": "Anticipating Feature Expansion",
+        "content": "Early-stage startups frequently redesign navigation every six months because their initial navigation bar had room for only four links. Modular layouts and flexible sidebar or drawer architectures accommodate growth without requiring ground-up rewrites."
+      },
+      {
+        "title": "Localization and Content Flexibility",
+        "content": "Button labels in German can be 40% longer than English; dates and currency formatting vary worldwide. Designing with flexible containers and dynamic typography prevents catastrophic visual overflows when entering new markets."
+      },
+      {
+        "title": "Accessibility as a Non-Negotiable",
+        "content": "Scalable design means designing for everyone. High contrast ratios, accessible focus rings, keyboard navigability, and clear semantic markup ensure compliance and open your product to millions of additional loyal users."
+      }
+    ],
+    "quote": "Scale is the true stress-test of design integrity. What holds together under pressure is good design."
+  }
+]

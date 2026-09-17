@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Redesign — Case Study · Akir</title>
+  <meta name="description" content="Revitalized the digital flagship experience for an avant-garde apparel label, integrating bespoke motion design, tactile micro-interactions, and a frictionless checkout flow.">
+  <link rel="icon" href="../assets/images/favicon-light.png" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="../assets/images/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Fontshare: Satoshi -->
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+  <!-- Desktop Decorative Side Borders -->
+  <div class="v-borders"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="../index.html" class="nav-brand">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7 11.5C7 7.5 10 4 14.5 4C19 4 20.5 7.5 20.5 11.5C20.5 15.5 17 19.5 12.5 19.5C8 19.5 5 16 5 12C5 8 8 5 12 4.5" stroke="#3EFF1C" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        Buildr<span class="brand-reg">®</span>
+      </a>
+      <nav class="nav-menu">
+        <a href="../projects.html" class="nav-link active">Projects</a>
+        <a href="../index.html#about" class="nav-link">About me</a>
+        <a href="../index.html#pricing" class="nav-link">Pricing</a>
+        <a href="../blog.html" class="nav-link ">Blog</a>
+      </nav>
+      <div class="nav-cta"><a href="../contact.html" class="btn-green">Get in touch</a></div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../projects.html" class="nav-link">Projects</a>
+    <a href="../index.html#about" class="nav-link">About me</a>
+    <a href="../index.html#pricing" class="nav-link">Pricing</a>
+    <a href="../blog.html" class="nav-link">Blog</a>
+    <a href="../contact.html" class="btn-green">Let's talk</a>
+  </div>
+
+  <main style="padding-top: 180px; padding-bottom: 120px; background: var(--black);">
+    <div class="container">
+      <!-- Title -->
+      <div style="text-align: center; margin-bottom: 50px;" class="reveal">
+        <h1 style="font-family: var(--font-display); font-size: clamp(40px, 5.5vw, 76px); font-weight: 800; letter-spacing: -0.04em; color: var(--text-white); margin-bottom: 20px;">
+          E-commerce Redesign
+        </h1>
+      </div>
+
+      <!-- Hero Mockup -->
+      <div class="reveal" style="width: 100%; max-height: 700px; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 60px; background: #181818;">
+        <img src="../assets/images/GAknG46WHhgPQj7cdVVslT9EJhQ.webp" alt="E-commerce Redesign" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+
+      <!-- Project Metadata Bar -->
+      <div class="reveal" style="display: flex; gap: 40px; align-items: flex-start; justify-content: space-between; padding-bottom: 60px; border-bottom: 1px solid var(--dark-border); margin-bottom: 80px; flex-wrap: wrap;">
+        <div style="max-width: 480px;">
+          <p style="color: var(--text-white); font-size: 18px; line-height: 1.6; margin-bottom: 24px;">
+            Revitalized the digital flagship experience for an avant-garde apparel label, integrating bespoke motion design, tactile micro-interactions, and a frictionless checkout flow.
+          </p>
+          <a href="https://framer.com" target="_blank" rel="noopener" class="btn-green">Visit website ↗</a>
+        </div>
+
+        <div style="display: flex; gap: 32px; flex-wrap: wrap;">
+          <div style="border-left: 1px solid var(--dark-border); padding-left: 20px;">
+            <div style="font-size: 12px; color: var(--text-subtle); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em;">Category</div>
+            <div style="font-size: 15px; font-weight: 600; color: var(--text-white);">E-Commerce</div>
+          </div>
+          <div style="border-left: 1px solid var(--dark-border); padding-left: 20px;">
+            <div style="font-size: 12px; color: var(--text-subtle); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em;">Services</div>
+            <div style="font-size: 15px; font-weight: 600; color: var(--text-white);">UX Strategy & Art Direction</div>
+          </div>
+          <div style="border-left: 1px solid var(--dark-border); padding-left: 20px;">
+            <div style="font-size: 12px; color: var(--text-subtle); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em;">Client</div>
+            <div style="font-size: 15px; font-weight: 600; color: var(--text-white);">Vanguard Apparel</div>
+          </div>
+          <div style="border-left: 1px solid var(--dark-border); padding-left: 20px;">
+            <div style="font-size: 12px; color: var(--text-subtle); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.05em;">Date</div>
+            <div style="font-size: 15px; font-weight: 600; color: var(--text-white);">2023</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The Challenge -->
+      <div class="reveal" style="display: grid; grid-template-columns: 0.6fr 1.4fr; gap: 40px; margin-bottom: 80px;">
+        <h2 style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--green); letter-spacing: 0.1em; text-transform: uppercase;">
+          THE CHALLENGE
+        </h2>
+        <p style="font-size: 18px; line-height: 1.7; color: var(--text-muted);">
+          High cart abandonment rates on mobile devices caused by slow page transitions, disjointed sizing charts, and cumbersome multi-step payment screens.
+        </p>
+      </div>
+
+      <!-- Showcase Image Gallery -->
+      <div class="reveal" style="display: flex; flex-direction: column; gap: 24px; margin-bottom: 80px;">
+        <div style="width: 100%; max-height: 640px; border-radius: var(--radius-lg); overflow: hidden; background: #181818;">
+          <img src="../assets/images/GAknG46WHhgPQj7cdVVslT9EJhQ.webp" alt="Showcase 1" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <div style="border-radius: var(--radius-md); overflow: hidden; height: 420px; background: #181818;">
+            <img src="../assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp" alt="Showcase 2" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <div style="border-radius: var(--radius-md); overflow: hidden; height: 420px; background: #181818;">
+            <img src="../assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp" alt="Showcase 3" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Final Outcome -->
+      <div class="reveal" style="display: grid; grid-template-columns: 0.6fr 1.4fr; gap: 40px; margin-bottom: 120px; padding-bottom: 80px; border-bottom: 1px solid var(--dark-border);">
+        <h2 style="font-family: var(--font-display); font-size: 14px; font-weight: 700; color: var(--green); letter-spacing: 0.1em; text-transform: uppercase;">
+          FINAL OUTCOME
+        </h2>
+        <p style="font-size: 18px; line-height: 1.7; color: var(--text-muted);">
+          Mobile checkout conversions leaped by 53%, average session time doubled, and the redesign was nominated for Site of the Day on Awwwards.
+        </p>
+      </div>
+
+      <!-- More Works Section -->
+      <div class="reveal">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px;">
+          <div>
+            <div class="pre-heading dark-theme">
+              <span class="dot"></span>
+              <span>Latest projects</span>
+            </div>
+            <h2 class="section-title" style="color: var(--text-white); margin-bottom: 0;">More works</h2>
+          </div>
+          <a href="../projects.html" class="btn-outline">All projects ↗</a>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px;">
+          
+          <a href="sol-productivity-app.html" class="project-card reveal">
+            <div class="img-wrapper">
+              <img src="../assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp" alt="Sol productivity app">
+              <div class="card-arrow">↗</div>
+            </div>
+            <div class="card-meta">
+              <div>
+                <h3 class="card-title">Sol productivity app</h3>
+                <p class="card-cat">Web Application — Product & UI Design</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="amin-saas-landing.html" class="project-card reveal">
+            <div class="img-wrapper">
+              <img src="../assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp" alt="Amin SaaS Landing">
+              <div class="card-arrow">↗</div>
+            </div>
+            <div class="card-meta">
+              <div>
+                <h3 class="card-title">Amin SaaS Landing</h3>
+                <p class="card-cat">SaaS Platform — Framer Development</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-left reveal">
+          <h2>Let's create<br>magic together</h2>
+          <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 24px; max-width: 380px;">
+            Have an upcoming project or idea? Let’s design something that truly moves the needle for your business.
+          </p>
+          <div style="display: flex; gap: 14px;">
+            <a href="../contact.html" class="btn-green">Get in touch</a>
+            <a href="../projects.html" class="btn-outline">
+              <span>View works</span>
+              <span class="circle-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-right reveal">
+          <form class="footer-form" id="contact-form">
+            <h3 style="font-family: var(--font-display); font-size: 18px; color: var(--text-white); margin-bottom: 4px;">Quick Message</h3>
+            <div class="form-group">
+              <input type="text" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your email address" required>
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Tell me about your project..." rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn-green" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Buildr® — All rights reserved. Designed with precision.
+        </div>
+        <div class="footer-links">
+          <a href="../index.html">Home</a>
+          <a href="../projects.html">Projects</a>
+          <a href="../blog.html">Blog</a>
+          <a href="../contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../assets/lenis.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

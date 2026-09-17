@@ -1,0 +1,102 @@
+[
+  {
+    "id": "sol-productivity-app",
+    "slug": "sol-productivity-app",
+    "title": "Sol productivity app",
+    "category": "Web Application",
+    "services": "Product & UI Design",
+    "client": "Sol Technologies",
+    "date": "2025",
+    "url": "https://framer.com",
+    "thumbnail": "assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp",
+    "hero_image": "assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp",
+    "summary": "The goal was to create a modern, elegant, and user-friendly productivity application that streamlines task management and team alignment, providing a distraction-free digital workspace.",
+    "challenge": "Modern professionals are overwhelmed by cluttered task boards and scattered communication channels. The primary hurdle was designing an interface that delivers powerful prioritization features while maintaining an ultra-clean, minimal aesthetic that reduces cognitive load.",
+    "gallery": [
+      "assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp",
+      "assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp",
+      "assets/images/Ir1ivZ7SgBGshY8A0pYsaCNl7M.webp"
+    ],
+    "outcome": "A cohesive design system and interactive web experience that increased daily active retention by 42% and earned praise across design communities for its fluid ergonomics and intuitive keyboard navigation."
+  },
+  {
+    "id": "amin-saas-landing",
+    "slug": "amin-saas-landing",
+    "title": "Amin SaaS Landing",
+    "category": "SaaS Platform",
+    "services": "Framer Development",
+    "client": "Amin AI",
+    "date": "2024",
+    "url": "https://framer.com",
+    "thumbnail": "assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp",
+    "hero_image": "assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp",
+    "summary": "Designed and built a high-converting landing page showcasing AI-driven automation workflows with interactive component demos and conversion-optimized sales funnels.",
+    "challenge": "Articulating complex artificial intelligence data pipelines to non-technical business founders without relying on confusing technical jargon or generic stock tech diagrams.",
+    "gallery": [
+      "assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp",
+      "assets/images/LGyqHxH7lFiWrGXLzJvoptSQyw.webp",
+      "assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp"
+    ],
+    "outcome": "Conversion rate from landing visitor to free trial signup increased by 68% within the first 30 days post-launch, driving over $1.2M in seed pipeline."
+  },
+  {
+    "id": "finova-dashboard",
+    "slug": "finova-dashboard",
+    "title": "Finova Dashboard",
+    "category": "Fintech Platform",
+    "services": "UI/UX & Design System",
+    "client": "Finova Global",
+    "date": "2024",
+    "url": "https://framer.com",
+    "thumbnail": "assets/images/Ir1ivZ7SgBGshY8A0pYsaCNl7M.webp",
+    "hero_image": "assets/images/Ir1ivZ7SgBGshY8A0pYsaCNl7M.webp",
+    "summary": "Architected an end-to-end multi-currency financial analytics dashboard with customizable modular data widgets and real-time transaction reporting.",
+    "challenge": "Dense financial balance sheets and global remittance feeds required meticulous typography hierarchies, contrast compliance, and instant scanning readability under high-stress trading scenarios.",
+    "gallery": [
+      "assets/images/Ir1ivZ7SgBGshY8A0pYsaCNl7M.webp",
+      "assets/images/GAknG46WHhgPQj7cdVVslT9EJhQ.webp",
+      "assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp"
+    ],
+    "outcome": "Reduced average operator task completion duration by 35% and established a multi-theme design system now adopted across Finova's web and mobile applications."
+  },
+  {
+    "id": "medx-startup-brand",
+    "slug": "medx-startup-brand",
+    "title": "MedX startup brand",
+    "category": "HealthTech",
+    "services": "Brand Identity & Web",
+    "client": "MedX Health",
+    "date": "2023",
+    "url": "https://framer.com",
+    "thumbnail": "assets/images/LGyqHxH7lFiWrGXLzJvoptSQyw.webp",
+    "hero_image": "assets/images/LGyqHxH7lFiWrGXLzJvoptSQyw.webp",
+    "summary": "Created an approachable yet trustworthy visual identity and digital web experience for a telemedicine healthcare provider bridging patient care and automated diagnostics.",
+    "challenge": "Balancing sterile medical credibility with warm human reassurance, ensuring patients of all demographics could easily navigate remote consultations and prescription renewals.",
+    "gallery": [
+      "assets/images/LGyqHxH7lFiWrGXLzJvoptSQyw.webp",
+      "assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp",
+      "assets/images/Ir1ivZ7SgBGshY8A0pYsaCNl7M.webp"
+    ],
+    "outcome": "Successfully launched MedX into 8 regional markets, onboarding over 25,000 patients with a 4.9/5 patient satisfaction score."
+  },
+  {
+    "id": "e-commerce-redesign",
+    "slug": "e-commerce-redesign",
+    "title": "E-commerce Redesign",
+    "category": "E-Commerce",
+    "services": "UX Strategy & Art Direction",
+    "client": "Vanguard Apparel",
+    "date": "2023",
+    "url": "https://framer.com",
+    "thumbnail": "assets/images/GAknG46WHhgPQj7cdVVslT9EJhQ.webp",
+    "hero_image": "assets/images/GAknG46WHhgPQj7cdVVslT9EJhQ.webp",
+    "summary": "Revitalized the digital flagship experience for an avant-garde apparel label, integrating bespoke motion design, tactile micro-interactions, and a frictionless checkout flow.",
+    "challenge": "High cart abandonment rates on mobile devices caused by slow page transitions, disjointed sizing charts, and cumbersome multi-step payment screens.",
+    "gallery": [
+      "assets/images/GAknG46WHhgPQj7cdVVslT9EJhQ.webp",
+      "assets/images/hZguIxn8ZhsPFL6AqNqvTMoO90.webp",
+      "assets/images/SWWGC1c7HYWZyYEpOl31oH45MU8.webp"
+    ],
+    "outcome": "Mobile checkout conversions leaped by 53%, average session time doubled, and the redesign was nominated for Site of the Day on Awwwards."
+  }
+]

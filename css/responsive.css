@@ -1,0 +1,688 @@
+/* ==========================================================================
+   AUTHENTIC FRAMER RESPONSIVE STYLESHEET
+   Matching https://original-griffin-841735.framer.app/
+   Breakpoints:
+     - Desktop: >= 1025px
+     - Tablet:  810px to 1024px
+     - Mobile:  <= 809.98px
+     - Small:   <= 420px
+   ========================================================================== */
+
+/* Zero Horizontal Overflow across all viewports */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   TABLET RESPONSIVE (810px to 1024px)
+   ========================================================================== */
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 24px;
+  }
+
+  /* Side borders hidden on tablet and below */
+  .v-borders {
+    display: none !important;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 14px 20px 0 !important;
+  }
+
+  .navbar-inner {
+    max-width: 100% !important;
+    height: 48px !important;
+    min-height: 48px !important;
+    padding: 4px 6px 4px 16px !important;
+  }
+
+  .nav-menu,
+  .nav-cta {
+    display: none !important;
+  }
+
+  .nav-toggle-circle {
+    display: flex !important;
+  }
+
+  /* Tablet Hero adjustments */
+  .hero-section-refined {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    padding-top: 110px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .hero-inner-container {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+  }
+
+  .hero-h1-top {
+    font-size: clamp(40px, 6vw, 64px) !important;
+  }
+
+  .hero-h1-bot {
+    font-size: clamp(48px, 6.8vw, 76px) !important;
+    transform: translateX(-30px) !important;
+  }
+
+  .hero-h1-bot .h1-archviz,
+  .hero-h1-bot .h1-cg {
+    transform: translateX(-25px) !important;
+  }
+
+  .hero-h1-bot .h1-space {
+    width: clamp(130px, 16vw, 190px) !important;
+  }
+
+  .hero-h1-bot .h1-artist {
+    transform: translateX(10px) !important;
+  }
+
+  .hero-portrait-stage {
+    width: clamp(400px, 48vw, 520px) !important;
+    max-width: 520px !important;
+  }
+
+  .hero-portrait-stage img {
+    max-height: clamp(520px, 68vh, 680px) !important;
+  }
+
+  .hero-bottom-left p {
+    max-width: 300px !important;
+    font-size: 15px !important;
+  }
+
+  /* Sections */
+  .exp-top-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 32px !important;
+  }
+
+  .exp-grid-v4 {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+
+  .projects-grid-white {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .bento-section {
+    grid-template-columns: 1fr !important;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+
+  .footer-grid-v1 {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE RESPONSIVE (<= 809.98px) — Exact Framer Match
+   ========================================================================== */
+@media (max-width: 809.98px) {
+  :root {
+    --container-padding: 16px;
+  }
+
+  .container {
+    padding: 0 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* 1. Navbar on Mobile */
+  /* 1. Navbar on Mobile */
+  .navbar {
+    padding: 10px 14px 0 !important;
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .navbar-inner {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 4px 8px 4px 14px !important;
+    border-radius: 12px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  .nav-brand {
+    font-size: 16px !important;
+    gap: 8px !important;
+  }
+
+  .nav-brand svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+
+  .nav-toggle-circle {
+    display: flex !important;
+    width: 36px !important;
+    height: 36px !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* 2. Hero Section on Mobile (Sequential Vertical Flow like Reference) */
+  .hero-section-refined {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    padding-top: 84px !important;
+    padding-bottom: 36px !important;
+    overflow: visible !important;
+  }
+
+  .hero-inner-container {
+    height: auto !important;
+    min-height: auto !important;
+    max-height: none !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 0 !important;
+    position: relative !important;
+  }
+
+  /* Top Header Stack */
+  .hero-header-stack {
+    position: relative !important;
+    z-index: 10 !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Top Badge on Mobile */
+  .hero-badge-top {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 14px !important;
+    font-size: 13px !important;
+    color: #3EFF1C !important;
+    font-weight: 500 !important;
+  }
+
+  .hero-badge-desktop {
+    display: none !important;
+  }
+
+  /* Centered Mobile Hero Headline */
+  .hero-h1 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    gap: 4px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .hero-h1-top {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: clamp(28px, 7.6vw, 36px) !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1.08 !important;
+    margin-bottom: 0 !important;
+    transform: none !important;
+    gap: 6px !important;
+  }
+
+  .hero-h1-top .h1-top-gap {
+    display: none !important;
+  }
+
+  .hero-h1-bot {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-size: clamp(24px, 6.8vw, 32px) !important;
+    letter-spacing: -0.03em !important;
+    line-height: 1.08 !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    transform: none !important;
+    gap: 6px !important;
+  }
+
+  .hero-h1-bot .h1-archviz,
+  .hero-h1-bot .h1-cg {
+    transform: none !important;
+  }
+
+  .hero-h1-bot .h1-space {
+    display: inline-block !important;
+    width: 8px !important;
+  }
+
+  .hero-h1-bot .h1-artist {
+    transform: none !important;
+  }
+
+  /* Mobile Intro & CTA Buttons (Sequentially below headline) */
+  .hero-mobile-intro {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    max-width: 340px !important;
+    margin: 14px auto 0 !important;
+    z-index: 10 !important;
+    position: relative !important;
+  }
+
+  .hero-mobile-intro p {
+    font-size: 15px !important;
+    line-height: 1.52 !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    margin-bottom: 18px !important;
+    text-align: center !important;
+  }
+
+  .hero-mobile-intro .hero-btn-group {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+
+  .btn-talk-pill {
+    font-size: 15px !important;
+    padding: 12px 24px !important;
+    border-radius: 12px !important;
+  }
+
+  .btn-arrow-pill {
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 18px !important;
+    border-radius: 12px !important;
+  }
+
+  /* Cutout Portrait (Sequentially below CTA buttons with green aura) */
+  .hero-portrait-stage {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 88% !important;
+    max-width: 320px !important;
+    margin: 22px auto 0 !important;
+    z-index: 2 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .hero-portrait-stage img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 380px !important;
+    object-fit: contain !important;
+  }
+
+  .hero-glow-field {
+    width: 340px !important;
+    height: 340px !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    filter: blur(55px) !important;
+    opacity: 0.7 !important;
+  }
+
+  /* Bottom Content Row (Hide desktop left CTA; center right happy clients) */
+  .hero-bottom-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    padding-bottom: 16px !important;
+    margin-top: 14px !important;
+  }
+
+  .hero-bottom-left {
+    display: none !important;
+  }
+
+  .hero-bottom-right {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+
+  .hero-clients-stack {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  .hero-clients-stack .avatar-group img {
+    width: 36px !important;
+    height: 36px !important;
+    margin-left: -10px !important;
+  }
+
+  .hero-clients-stack .stat-count {
+    font-size: 28px !important;
+  }
+
+  .hero-clients-label {
+    font-size: 14px !important;
+  }
+
+  /* 3. Stats Ticker Bar */
+  .stats-ticker-bar {
+    padding: 16px 0 !important;
+    overflow: hidden !important;
+    width: 100% !important;
+  }
+
+  .ticker-item {
+    font-size: 20px !important;
+    gap: 10px !important;
+    padding: 0 16px !important;
+  }
+
+  .ticker-star {
+    width: 16px !important;
+    height: 16px !important;
+  }
+
+  /* 4. Experience Section */
+  .exp-section-v4 {
+    padding: 60px 0 !important;
+  }
+
+  .exp-top-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+  }
+
+  .exp-grid-v4 {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .exp-card-v4 {
+    padding: 24px 20px !important;
+  }
+
+  .exp-rotating-badge {
+    align-self: flex-start !important;
+  }
+
+  /* 5. Projects Section */
+  .projects-section-white {
+    padding: 60px 0 !important;
+  }
+
+  .projects-top-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 18px !important;
+  }
+
+  .projects-grid-white {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .project-card-white {
+    padding: 14px !important;
+    border-radius: 18px !important;
+  }
+
+  .project-card-image {
+    height: 210px !important;
+    border-radius: 12px !important;
+  }
+
+  .projects-cta-row {
+    margin-top: 32px !important;
+    justify-content: center !important;
+  }
+
+  /* 6. Services Accordion ("How I can help") */
+  .services-section-v2 {
+    padding: 60px 0 !important;
+  }
+
+  .service-head-v2 {
+    padding: 18px 0 !important;
+    gap: 10px !important;
+  }
+
+  .service-head-left {
+    gap: 14px !important;
+  }
+
+  .service-num-v2 {
+    font-size: 14px !important;
+  }
+
+  .service-title-v2 {
+    font-size: clamp(20px, 5.2vw, 24px) !important;
+  }
+
+  .service-body-v2 {
+    flex-direction: column !important;
+    gap: 18px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .service-body-left {
+    width: 100% !important;
+  }
+
+  .service-body-right {
+    width: 100% !important;
+    height: 180px !important;
+  }
+
+  .service-tags-v2 {
+    gap: 8px !important;
+  }
+
+  /* 7. Testimonials */
+  .testimonials-section {
+    padding: 60px 0 !important;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  /* 8. Bento Grid */
+  .bento-section {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding: 60px 0 !important;
+  }
+
+  .bento-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .bento-portrait-card {
+    min-height: 300px !important;
+  }
+
+  /* 9. Pricing Section */
+  .pricing-section-v2, .pricing-section {
+    padding: 60px 0 !important;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    gap: 22px !important;
+  }
+
+  .pricing-card {
+    padding: 26px 20px !important;
+    border-radius: 18px !important;
+  }
+
+  /* 10. FAQ Section */
+  .faq-section {
+    padding: 60px 0 !important;
+  }
+
+  .faq-grid {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+  }
+
+  .faq-question {
+    font-size: 16px !important;
+    padding: 18px !important;
+  }
+
+  /* 11. Blog Section */
+  .blog-section-v1, .blog-section {
+    padding: 60px 0 !important;
+  }
+
+  .blog-grid-v1, .blog-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .blog-card-v1 {
+    max-width: 420px !important;
+    margin: 0 auto !important;
+  }
+
+  /* 12. Contact Form & Footer */
+  .footer-section-v1, footer {
+    padding: 60px 0 36px !important;
+  }
+
+  .footer-grid-v1 {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+
+  .footer-cta-col-v1 h2 {
+    font-size: clamp(30px, 8vw, 44px) !important;
+  }
+
+  .footer-form-card-v1 {
+    padding: 24px 18px !important;
+    border-radius: 18px !important;
+  }
+
+  .footer-form-card-v1 input,
+  .footer-form-card-v1 textarea {
+    width: 100% !important;
+  }
+
+  .footer-links-row-v1 {
+    flex-direction: column !important;
+    gap: 28px !important;
+  }
+
+  .footer-bottom-v1 {
+    flex-direction: column !important;
+    gap: 18px !important;
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .footer-badges-v1 {
+    justify-content: center !important;
+  }
+
+  /* General Typography */
+  .section-title {
+    font-size: clamp(28px, 7vw, 38px) !important;
+  }
+
+  .section-subtitle {
+    font-size: 14px !important;
+  }
+
+  .pre-heading {
+    font-size: 12px !important;
+  }
+}
+
+
+/* ==========================================================================
+   EXTRA SMALL MOBILE (<= 420px)
+   ========================================================================== */
+@media (max-width: 420px) {
+  .hero-h1-top,
+  .hero-h1-bot {
+    font-size: clamp(30px, 8.5vw, 38px) !important;
+  }
+
+  .btn-talk-pill {
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+  }
+
+  .btn-arrow-pill {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .mobile-menu-modal {
+    padding: 18px 18px 20px !important;
+  }
+
+  .mobile-menu-links .mob-link {
+    font-size: 26px !important;
+  }
+}
