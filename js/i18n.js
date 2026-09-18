@@ -468,6 +468,12 @@
     }
   };
 
+  const FLAGS = {
+    uz: '<svg class="flag-icon" viewBox="0 0 640 480"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#0099b5" d="M0 0h640v160H0z"/><path fill="#ce1126" d="M0 155h640v10H0z"/><path fill="#ffffff" d="M0 160h640v160H0z"/><path fill="#ce1126" d="M0 315h640v10H0z"/><path fill="#1eb53a" d="M0 320h640v160H0z"/><circle cx="70" cy="80" r="32" fill="#ffffff"/><circle cx="82" cy="80" r="26" fill="#0099b5"/></g></svg>',
+    ru: '<svg class="flag-icon" viewBox="0 0 640 480"><g fill-rule="evenodd" stroke-width="1pt"><path fill="#ffffff" d="M0 0h640v160H0z"/><path fill="#0039a6" d="M0 160h640v160H0z"/><path fill="#d52b1e" d="M0 320h640v160H0z"/></g></svg>',
+    en: '<svg class="flag-icon" viewBox="0 0 640 480"><path fill="#012169" d="M0 0h640v480H0z"/><path fill="#FFF" d="m75 0 244 181L562 0h78v62L400 241l240 178v61h-80L320 301 81 480H0v-60l239-179L0 64V0h75z"/><path fill="#C8102E" d="m424 288 216 159v33h-25L383 314l41-26zm-208-96L0 33V0h25l232 165-41 27zm-41 27L0 345v35l175-131zm249-54 216-160V0l-216 165z"/><path fill="#FFF" d="M250 0h140v480H250zM0 170h640v140H0z"/><path fill="#C8102E" d="M276 0h88v480h-88zM0 196h640v88H0z"/></svg>'
+  };
+
   let currentLang = localStorage.getItem('buildr_lang') || 'uz';
 
   function setLanguage(lang) {
@@ -510,22 +516,88 @@
       }
     });
 
-    // 4. Update active class on all language buttons across page
-    document.querySelectorAll('.lang-btn').forEach((btn) => {
-      const btnLang = btn.getAttribute('data-lang');
-      if (btnLang === lang) {
-        btn.classList.add('active');
-      } else {
-        btn.classList.remove('active');
+    // 4. Update dropdowns & triggers across the page
+    document.querySelectorAll('.lang-dropdown').forEach((dropdown) => {
+      const triggerFlag = dropdown.querySelector('.lang-trigger-flag');
+      const triggerCode = dropdown.querySelector('.lang-trigger-code');
+      if (triggerFlag && FLAGS[lang]) {
+        triggerFlag.innerHTML = FLAGS[lang];
       }
+      if (triggerCode) {
+        triggerCode.textContent = lang.toUpperCase();
+      }
+      dropdown.querySelectorAll('.lang-dropdown-item').forEach((item) => {
+        const itemLang = item.getAttribute('data-lang');
+        item.classList.toggle('active', itemLang === lang);
+      });
+      dropdown.classList.remove('open');
+      const trig = dropdown.querySelector('.lang-dropdown-trigger');
+      if (trig) trig.setAttribute('aria-expanded', 'false');
     });
 
-    // 5. Notify Lenis or window that content might have resized
+    // 5. Update legacy buttons (if any exist)
+    document.querySelectorAll('.lang-btn').forEach((btn) => {
+      const btnLang = btn.getAttribute('data-lang');
+      btn.classList.toggle('active', btnLang === lang);
+    });
+
+    // 6. Notify Lenis or window that content might have resized
     window.dispatchEvent(new Event('resize'));
   }
 
   function initI18n() {
-    // Bind click events on all language switcher buttons
+    // 1. Dropdown click and toggle bindings
+    const dropdowns = document.querySelectorAll('.lang-dropdown');
+    dropdowns.forEach((dropdown) => {
+      const trigger = dropdown.querySelector('.lang-dropdown-trigger');
+      if (trigger) {
+        trigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isOpen = dropdown.classList.contains('open');
+          dropdowns.forEach((d) => {
+            if (d !== dropdown) {
+              d.classList.remove('open');
+              const t = d.querySelector('.lang-dropdown-trigger');
+              if (t) t.setAttribute('aria-expanded', 'false');
+            }
+          });
+          dropdown.classList.toggle('open', !isOpen);
+          trigger.setAttribute('aria-expanded', String(!isOpen));
+        });
+      }
+
+      dropdown.querySelectorAll('.lang-dropdown-item').forEach((item) => {
+        item.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const selected = item.getAttribute('data-lang');
+          if (selected) {
+            setLanguage(selected);
+          }
+        });
+      });
+    });
+
+    // Close dropdowns on outside click
+    document.addEventListener('click', () => {
+      dropdowns.forEach((d) => {
+        d.classList.remove('open');
+        const t = d.querySelector('.lang-dropdown-trigger');
+        if (t) t.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close dropdowns on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        dropdowns.forEach((d) => {
+          d.classList.remove('open');
+          const t = d.querySelector('.lang-dropdown-trigger');
+          if (t) t.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
+
+    // 2. Legacy button click bindings
     document.querySelectorAll('.lang-btn').forEach((btn) => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -536,7 +608,7 @@
       });
     });
 
-    // Apply current language
+    // Apply active language immediately
     setLanguage(currentLang);
   }
 
