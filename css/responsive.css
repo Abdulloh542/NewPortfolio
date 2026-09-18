@@ -202,8 +202,10 @@ html, body {
     min-height: auto !important;
     max-height: none !important;
     padding-top: 84px !important;
-    padding-bottom: 36px !important;
-    overflow: visible !important;
+    padding-bottom: 0 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    overflow: hidden !important;
+    position: relative !important;
   }
 
   .hero-inner-container {
@@ -216,6 +218,7 @@ html, body {
     text-align: center !important;
     gap: 0 !important;
     position: relative !important;
+    padding-bottom: 0 !important;
   }
 
   /* Top Header Stack */
@@ -299,15 +302,16 @@ html, body {
     transform: none !important;
   }
 
-  /* Mobile Intro & CTA Buttons (Sequentially below headline) */
+  /* Mobile Intro & CTA Buttons (Left-aligned exactly like Reference Image 2) */
   .hero-mobile-intro {
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
+    align-items: flex-start !important;
+    text-align: left !important;
     width: 100% !important;
-    max-width: 340px !important;
-    margin: 14px auto 0 !important;
+    max-width: 100% !important;
+    margin: 18px 0 0 0 !important;
+    padding: 0 4px !important;
     z-index: 10 !important;
     position: relative !important;
   }
@@ -317,14 +321,16 @@ html, body {
     line-height: 1.52 !important;
     color: rgba(255, 255, 255, 0.85) !important;
     margin-bottom: 18px !important;
-    text-align: center !important;
+    text-align: left !important;
+    max-width: 330px !important;
   }
 
   .hero-mobile-intro .hero-btn-group {
     display: flex !important;
-    justify-content: center !important;
+    justify-content: flex-start !important;
     align-items: center !important;
     gap: 10px !important;
+    width: 100% !important;
   }
 
   .btn-talk-pill {
@@ -340,81 +346,79 @@ html, body {
     border-radius: 12px !important;
   }
 
-  /* Cutout Portrait (Sequentially below CTA buttons with green aura) */
+  /* Cutout Portrait (Seated directly and cleanly flush on bottom line, matching Image 2) */
   .hero-portrait-stage {
     position: relative !important;
-    bottom: auto !important;
+    bottom: 0 !important;
     left: auto !important;
     transform: none !important;
-    width: 88% !important;
-    max-width: 320px !important;
-    margin: 22px auto 0 !important;
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 24px auto 0 !important;
+    padding-bottom: 0 !important;
     z-index: 2 !important;
     display: flex !important;
     justify-content: center !important;
-    align-items: center !important;
+    align-items: flex-end !important;
+    align-self: center !important;
+    line-height: 0 !important;
   }
 
   .hero-portrait-stage img {
     width: 100% !important;
     height: auto !important;
-    max-height: 380px !important;
+    max-height: 420px !important;
     object-fit: contain !important;
+    display: block !important;
+    vertical-align: bottom !important;
+    margin-bottom: 0 !important;
+    filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.8)) !important;
+    animation: heroPortraitEntranceMob 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both !important;
   }
 
+  @keyframes heroPortraitEntranceMob {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Green glow aura situated behind left shoulder, matching Image 2 */
   .hero-glow-field {
     width: 340px !important;
     height: 340px !important;
-    bottom: 20px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+    bottom: 0 !important;
+    left: -80px !important;
+    transform: none !important;
+    background: radial-gradient(circle at 35% 65%, rgba(62, 255, 28, 0.38) 0%, rgba(62, 255, 28, 0.12) 45%, transparent 70%) !important;
     filter: blur(55px) !important;
-    opacity: 0.7 !important;
+    opacity: 0.8 !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    will-change: transform;
   }
 
-  /* Bottom Content Row (Hide desktop left CTA; center right happy clients) */
+  /* Bottom Content Row (Hidden on mobile so portrait sits directly on border line) */
   .hero-bottom-grid {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    width: 100% !important;
-    padding-bottom: 16px !important;
-    margin-top: 14px !important;
-  }
-
-  .hero-bottom-left {
     display: none !important;
   }
 
-  .hero-bottom-right {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 8px !important;
-    width: 100% !important;
-  }
-
-  .hero-clients-stack {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 12px !important;
-  }
-
-  .hero-clients-stack .avatar-group img {
-    width: 36px !important;
-    height: 36px !important;
-    margin-left: -10px !important;
-  }
-
-  .hero-clients-stack .stat-count {
-    font-size: 28px !important;
-  }
-
-  .hero-clients-label {
-    font-size: 14px !important;
+  /* Touch & UX responsiveness enhancements (0ms tap lag, buttery scroll) */
+  button, 
+  a, 
+  .mob-link, 
+  .nav-toggle-circle, 
+  .lang-btn, 
+  .btn-talk-pill, 
+  .btn-arrow-pill, 
+  .faq-card-top, 
+  .service-top-v2 {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   /* 3. Stats Ticker Bar */
@@ -663,9 +667,21 @@ html, body {
    EXTRA SMALL MOBILE (<= 420px)
    ========================================================================== */
 @media (max-width: 420px) {
-  .hero-h1-top,
+  .hero-h1-top {
+    font-size: clamp(24px, 7vw, 30px) !important;
+  }
+
   .hero-h1-bot {
-    font-size: clamp(30px, 8.5vw, 38px) !important;
+    font-size: clamp(22px, 6.4vw, 28px) !important;
+  }
+
+  .hero-portrait-stage {
+    max-width: 320px !important;
+    margin-top: 18px !important;
+  }
+
+  .hero-portrait-stage img {
+    max-height: 360px !important;
   }
 
   .btn-talk-pill {

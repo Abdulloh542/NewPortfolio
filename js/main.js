@@ -126,6 +126,7 @@ function initScrollReveal() {
   const revealElements = document.querySelectorAll('.reveal');
   if (!revealElements.length) return;
 
+  const isMobile = window.innerWidth <= 810;
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -134,8 +135,8 @@ function initScrollReveal() {
       }
     });
   }, {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
+    threshold: isMobile ? 0.02 : 0.12,
+    rootMargin: isMobile ? '0px 0px 80px 0px' : '0px 0px -30px 0px'
   });
 
   revealElements.forEach(el => observer.observe(el));
